@@ -36,5 +36,10 @@ jobs:
         run: ls
       - name: move result (log file)
         run: Move-Item -Path ./***.log -Destination ./polyspace_result
-        
+      - name: git add
+        run: git add ./polyspace_result
+      - name: git commit  
+        run: git commit -m "add log file"
+      - name: git push
+        run: git push origin master
         
