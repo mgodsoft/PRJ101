@@ -30,3 +30,9 @@ jobs:
       # Runs polyspace server
       - name: Run polyspace server
         run: polyspace-bug-finder-server -sources ./cfile_folder/ZeroDivision.c
+        
+      # Check current resulting file
+      - name: show current location
+        run: ls
+        
+        
