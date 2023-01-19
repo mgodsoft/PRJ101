@@ -34,5 +34,7 @@ jobs:
       # Check current resulting file
       - name: show current location
         run: ls
+      - name: move result (log file)
+        run: Move-Item -Path ./***.log -Destination ./polyspace_result
         
         
