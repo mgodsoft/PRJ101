@@ -23,6 +23,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v3
+      # Runs check file
+      - name: file listing
+        run: ls
+            
       # Runs polyspace server
       - name: Run polyspace server
-        run: polyspace-bug-finder-server -sources ZeroDivision.c
+        run: polyspace-bug-finder-server -sources ./cfile_folder/ZeroDivision.c
