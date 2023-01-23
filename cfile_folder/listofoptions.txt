@@ -1,0 +1,5 @@
+#These are the options for DSC Code
+-lang C
+-misra2 required-rules
+-sources ./cfile_folder/ZeroDivision.c
+-results-dir ./polyspace_result
