@@ -30,7 +30,7 @@ jobs:
       # Runs polyspace server
       # polyspace-bug-finder-server -sources ./cfile_folder/ZeroDivision.c
       - name: Run polyspace server
-        run: polyspace-bug-finder-server -options-file listofoptions.txt
+        run: polyspace-bug-finder-server -options-file ./cfile_folder/listofoptions.txt
         
       # Check current resulting file
       - name: show current location
