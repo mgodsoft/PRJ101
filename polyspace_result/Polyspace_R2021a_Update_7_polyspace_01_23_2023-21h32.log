@@ -1,0 +1,277 @@
+<polyspace-bug-finder-server R2021a Update 7 PID6492 PGID6492>
+
+Polyspace verification of polyspace project.
+Starting at 01/23/2023, 21h32.
+
+
+
+Verifying sources compliance ...
+
+Options used with Verifier:
+-prog=polyspace
+-lang=C
+-target=i386
+-compiler=generic
+-polyspace-version=3.4 (R2021a Update 7)
+-author=SED
+-verif-version=1.0
+-results-dir=C:\Users\SED\actions-runner\_work\PRJ101\PRJ101\polyspace_result
+-date=23/01/2023
+
+User:
+-misra2=required-rules
+
+
+Checkers enabled:
+    Defects 94/259
+    MISRA-C:2004 114/132
+
+
+Verifying host configuration:
+Number of physical cores:                8
+Number of logical cores:                 16
+Processor type:                          amd64
+Processor model:                11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+Processor frequency:            2.304 GHz
+Memory > 4 GB:                                             31.72 GB
+Tmp space available in C:\Users\SED\AppData\Local\Temp:    368.35 GB
+
+Remark: 8 physical core(s) detected. The verification creates 8 process(es).
+*** Configuration of the host :	OK
+
+Type C:\Users\SED\actions-runner\_work\PRJ101\PRJ101\polyspace_result\kill-rte-kernel.bat on host DESKTOP-R2K9S48 to halt Verifier process
+
+Checking license ...
+
+	Trial License -- for use to evaluate programs for possible purchase as an end-user only.
+
+
+License is OK
+
+
+Polyspace C analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Jan 23 21:32:53 2023
+Host: MINGW64_NTx_64-6.2 DESKTOP-R2K9S48 0 amd64
+User: SED
+**********************************************************
+***
+*** Verifying C sources
+***
+**********************************************************
+
+Verifying sources ...
+Verifying ZeroDivision.c (1/1)
+Global compilation phase...
+
+Number of files                  : 1
+Number of lines                  : 6
+Number of lines without comments : 6
+
+These metrics include header file content in addition to source files and reflect the true complexity of code and analysis.
+Number of source files    : 1
+Number of C lines of code : 47 (excludes commented (20) and empty lines (20))
+Number of headers         : 1 (directly included in sources 0, Maximum depth of inclusion 0)
+
+Verifying cross-files ANSI C compliance
+
+Stubbing standard library functions ...
+Doing code transformations ...
+Remark: The generated default DRS XML file "drs-template.xml" can be found in <result_dir> folder.
+
+**********************************************************
+MISRA-C:2004 Rule checker results
+ Use the Report Generator in order to get the complete report.
+Coding standards checking might not be complete. Some rule violations
+ are detected after the source compliance checking phase.
+**********************************************************
+Summary per file:
+  File C:\Users\SED\actions-runner\_work\PRJ101\PRJ101\cfile_folder\ZeroDivision.c: 
+    2 rules violated
+**********************************************************
+Summary per rule:
+  rule 16.5 violated 1 time
+  rule 8.1 violated 1 time
+
+
+
+
+Packing compilation data
+
+Defects statistics:
+  - Total number of defects: 0
+done.
+
+**********************************************************
+***
+*** C sources verification done
+***
+**********************************************************
+Ending at: Mon Jan 23 21:32:55 2023
+User time for compilation: 00:00:01.26 (1.26real, 1.26u + 0s (0.02gc))
+
+Polyspace C analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Jan 23 21:32:55 2023
+Host: MINGW64_NTx_64-6.2 DESKTOP-R2K9S48 0 amd64
+User: SED
+**********************************************************
+***
+*** Beginning Bug-finder - Pre-analysis
+***
+**********************************************************
+**** Bug-finder - Pre-analysis - 1 (P_AL)
+Total complexity = 10
+**** Bug-finder - Pre-analysis - 1 (P_AL) took 0.05real, 0.05u + 0s
+**** Bug-finder - Pre-analysis - 2 (P_ACP)
+* n-acp-t = 0 n-epp' = 0 n-acp-l = 0
+**** Bug-finder - Pre-analysis - 2 (P_ACP) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 3 (P_O)
+**** Bug-finder - Pre-analysis - 3 (P_O) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 4 (P_MA)
+**** Bug-finder - Pre-analysis - 4 (P_MA) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 5 (P_G)
+**** Bug-finder - Pre-analysis - 5 (P_G) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 6 (P_DRC)
+**** Bug-finder - Pre-analysis - 6 (P_DRC) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 7 (P_TT)
+**** Bug-finder - Pre-analysis - 7 (P_TT) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 8 (P_FI)
+**** Bug-finder - Pre-analysis - 8 (P_FI) took 0real, 0u + 0s
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 0
+
+GUI files generation completed in 0.18real
+
+**********************************************************
+***
+*** Bug-finder - Pre-analysis done
+***
+**********************************************************
+Ending at: Mon Jan 23 21:32:55 2023
+User time for pre-analysis: 00:00:00.46 (0.46real, 0.46u + 0s (0.06gc))
+
+Polyspace C analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Jan 23 21:32:55 2023
+Host: MINGW64_NTx_64-6.2 DESKTOP-R2K9S48 0 amd64
+User: SED
+**********************************************************
+***
+*** Beginning Bug-finder - Function Analysis
+***
+**********************************************************
+**** Bug-finder - Function Analysis - (Verifying function #1 / 1: main)
+**** Bug-finder - Function Analysis - (Verifying function #1 / 1: main) took 0.2real
+Maximum Memory Usage: 575 MB
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 2
+  - INT_ZERO_DIV: 1
+  - USELESS_WRITE: 1
+
+GUI files generation completed in 0.22real
+
+* Total IL complexity: 50
+
+**********************************************************
+***
+*** Bug-finder - Function Analysis done
+***
+**********************************************************
+Ending at: Mon Jan 23 21:32:56 2023
+User time for function: 00:00:00.60 (0.61real, 0.61u + 0s (0.03gc))
+
+Polyspace C analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Jan 23 21:32:56 2023
+Host: MINGW64_NTx_64-6.2 DESKTOP-R2K9S48 0 amd64
+User: SED
+**********************************************************
+***
+*** Beginning Bug-finder - Module Analysis
+***
+**********************************************************
+**** Bug-finder - Module Analysis - 1 (Computing modules)
+**** Bug-finder - Module Analysis - 1 (Computing modules) took 0.03real, 0.03u + 0s
+* Created no module as there are no available user functions, or all functions are independent
+Maximum Memory Usage: 0 MB
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 2
+  - INT_ZERO_DIV: 1
+  - USELESS_WRITE: 1
+
+GUI files generation completed in 0.24real
+
+**********************************************************
+***
+*** Bug-finder - Module Analysis done
+***
+**********************************************************
+Ending at: Mon Jan 23 21:32:56 2023
+User time for module: 00:00:00.29 (0.29real, 0.29u + 0s (0.03gc))
+
+Polyspace C analysis
+Copyright 1999-2020 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Mon Jan 23 21:32:56 2023
+Host: MINGW64_NTx_64-6.2 DESKTOP-R2K9S48 0 amd64
+User: SED
+**********************************************************
+***
+*** Beginning Bug-finder - Global analysis
+***
+**********************************************************
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 2
+  - INT_ZERO_DIV: 1
+  - USELESS_WRITE: 1
+
+GUI files generation completed in 0.28real
+
+
+**********************************************************
+MISRA-C:2004 Rule checker results
+ Use the Report Generator in order to get the complete report.
+**********************************************************
+Summary per file:
+  File C:\Users\SED\actions-runner\_work\PRJ101\PRJ101\cfile_folder\ZeroDivision.c: 
+    3 rules violated
+**********************************************************
+Summary per rule:
+  rule 16.5 violated 1 time
+  rule 21.1 violated 1 time
+  rule 8.1 violated 1 time
+
+**********************************************************
+***
+*** Bug-finder - Global analysis done
+***
+**********************************************************
+Ending at: Mon Jan 23 21:32:56 2023
+User time for global: 00:00:00.38 (0.39real, 0.39u + 0s (0.02gc))
+User time for polyspace-bug-finder-server: 00:00:03.36 (3.36real, 3.36u + 0s (0.2gc))
+
+***
+*** End of Polyspace analysis
+***
